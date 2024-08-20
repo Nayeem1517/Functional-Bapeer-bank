@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To My Bank Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-bold mt-8 text-center text-violet-600">Let's Get Some <span class="text-red-400 font-bold"> Moneeeey</span></h1>
+    </header>
+    <main>
+        <!-- Creating The Deposit,withdraw and Balance Interface -->
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto mt-10">
+                <!-- This Is Our Deposit Section -->
+                <div class="bg-green-400 p-8 rounded-lg text-white">
+                    <h4 class="text-2xl font-bold">Deposit</h4>
+                    <h2 class="text-5xl">$ <span id="deposit-amount">00</span></h2>
+                </div>
+                <!-- This Is Our withdraw Section -->
+                <div class="bg-sky-400 p-8 rounded-lg text-white">
+                    <h4 class="text-2xl font-bold">Withdraw</h4>
+                    <h2 class="text-5xl">$ <span id="withdraw-amount">00</span></h2>
+                </div>
+                <!-- This Is Our Balance Section -->
+                <div class="bg-amber-400 p-8 rounded-lg text-white">
+                    <h4 class="text-2xl font-bold">Balance</h4>
+                    <h2 class="text-5xl">$ <span id="balance-amount">1240</span></h2>
+                </div>
+                <!-- This Is Our Savings Section -->
+                <div class="bg-cyan-800 p-8 rounded-lg text-white">
+                    <h4 class="text-2xl font-bold">Saving</h4>
+                    <h2 class="text-5xl">$ <span id="savings-amount">00</span></h2>
+                </div>
+                <!-- This Is Our paybill Section -->
+                <div class="bg-blue-600 p-8 rounded-lg text-white">
+                    <h4 class="text-2xl font-bold">Pay Bill</h4>
+                    <h2 class="text-5xl">$ <span id="paybill-amount">00</span></h2>
+                </div>
+                <!-- This Is Our Dues Section -->
+                <div class="bg-indigo-600 p-8 rounded-lg text-white">
+                    <h4 class="text-2xl font-bold">Dues</h4>
+                    <h2 class="text-5xl">$ <span id="dues-amount">00</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Creating the Deposite And withdraw Form Section -->
+         <section>
+            <h1 class="text-5xl font-bold mt-8 text-center text-violet-600">Let's <span class="text-red-400 font-bold"> Deposit</span> And  <span class="text-red-400 font-bold"> Withdraw</span></h1>
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-10">
+                <div class="bg-fuchsia-900 p-8 rounded-xl text-white">
+                    <h4 class="text-2xl font-bold mb-4">Please Deposit </h4>
+                    <input id="user-deposit" class="w-3/4 block mb-4 p-3 text-black" type="text" placeholder="$ Enter Your Amount To Deposit">
+                    <button id="btn-deposit" class="bg-amber-600 hover:bg-sky-400 px-8 py-2 font-bold text-white rounded-lg">DEPOSIT</button>
+                </div>
+                <div class="bg-violet-900 p-8 rounded-xl text-white">
+                    <h4 class="text-2xl font-bold mb-4">Please Withdraw </h4>
+                    <input id="user-withdraw" class="w-3/4 block mb-4 p-3 text-black" type="text" placeholder="$ Enter Your Amount To withdraw">
+                    <button id="btn-withdraw" class="bg-amber-600 hover:bg-sky-400 px-8 py-2 font-bold text-white rounded-lg">WITHDRAW</button>
+                </div>
+            </div>
+         </section>
+    </main>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
